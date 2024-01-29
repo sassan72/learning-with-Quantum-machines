@@ -76,7 +76,7 @@ K22 = sqrtm(K2)
 K11 = np.linalg.pinv(K1)
 
 
-KK = (np.real(K22))*K11*(np.real(K22)) # g(K^C||K^Q)
+KK = (np.real(K22))@K11@(np.real(K22)) # g(K^C||K^Q)
 
 from scipy.linalg.interpolative import estimate_spectral_norm
 
